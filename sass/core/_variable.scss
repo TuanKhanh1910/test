@@ -1,0 +1,15 @@
+:root {
+    --font-pri: 'Roboto', serif;
+    --size-hd: 10rem;
+}
+
+// dit me m nho chua
+$color-pri: #1a2352;
+$color-second: #ec1d23;
+$color-text: #000000;
+
+@mixin max($value) {
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}

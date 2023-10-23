@@ -1,0 +1,190 @@
+.document {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .document__details {
+      .col-3 {
+        width: calc((4 / 12 * 100%) - 0.8rem);
+      }
+      .document__item {
+        .document__img {
+          .document__img__desc {
+            top: 51%;
+            padding: calc(34%) 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 767.9px) {
+    .document__details {
+      .col-3 {
+        width: calc((6 / 12 * 100%) - 0.8rem);
+      }
+      .document__item {
+        .document__img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .document__img__desc {
+            z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: calc(100% - 68%) 0;
+          }
+        }
+        .exam__right {
+          .exam__infomation {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.exam {
+  @media screen and (min-width: 952px) and (max-width: 1199px) {
+    .exam__details {
+      .col-3 {
+        width: calc((4 / 12 * 100%) - 1.8rem);
+      }
+      .exam__item {
+        .exam__right {
+          .exam__infomation {
+            margin-bottom: 5rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 951px) {
+    .exam__details {
+      .col-3 {
+        width: calc((6 / 12 * 100%) - 1.8rem);
+      }
+      .exam__item {
+        .exam__right {
+          .exam__infomation {
+            margin-bottom: 5rem;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767.1px) {
+    .exam__details {
+      .col-3 {
+        width: calc((12 / 12 * 100%) - 1.8rem);
+      }
+      .exam__item {
+        .exam__right {
+          .exam__infomation {
+            margin-bottom: 7rem;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.news {
+  @media screen and (min-width: 725px) and (max-width: 1085px) {
+    .news__content {
+      .col-8 {
+        width: calc(12 / 12 * 100%);
+      }
+      .col-4 {
+        width: calc(12 / 12 * 100);
+      }
+      .news__left {
+        margin-bottom: 5rem;
+        .news__left__content {
+          .new__left__item {
+            .news__title {
+              width: calc(100% - 10rem);
+            }
+            .news__desc {
+              width: calc(100% - 12rem);
+            }
+          }
+        }
+      }
+      .news__right {
+        margin: 0 auto;
+        // display: flex;
+        // justify-content: center;
+        .news__right__item {
+          width: 100%;
+        }
+        // .col {
+        //   width: calc(6 / 12 * 100%);
+        // }
+      }
+    }
+  }
+  @media screen and (min-width: 725px) and (max-width: 990px) {
+    .news__content {
+      .news__right {
+        .news__right__item {
+          .item__infor {
+            .item__infor__title {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        // .col {
+        //   width: calc(6 / 12 * 100%);
+        // }
+      }
+    }
+  }
+  @media screen and (max-width: 724.9px) {
+    .news__header {
+      text-align: center;
+    }
+    .news__content {
+      margin: 0 auto;
+      .col-8 {
+        width: calc(12 / 12 * 100%);
+      }
+      .col-4 {
+        width: calc(12 / 12 * 100);
+      }
+      .news__left {
+        margin-bottom: 5rem;
+        .news__left__content {
+          .new__left__item {
+            margin-bottom: 3rem;
+            .news__title {
+              width: calc(100% - 10rem);
+            }
+            .news__desc {
+              width: calc(100% - 12rem);
+            }
+          }
+          .col-6 {
+            width: calc(12 / 12 * 100%);
+          }
+        }
+      }
+      .news__right {
+        // display: flex;
+        // justify-content: center;
+        .news__right__item {
+          .item__infor {
+            width: 30rem;
+            .item__infor__title {
+              font-size: 1.4rem;
+            }
+          }
+        }
+        // .col {
+        //   width: calc(6 / 12 * 100%);
+        // }
+      }
+    }
+  }
+}
