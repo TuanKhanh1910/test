@@ -1,17 +1,27 @@
 .news {
   padding: 5rem 0;
   margin-bottom: 5rem;
+  .container {
+    max-width: 122.6rem;
+  }
   .news__header {
     text-align: left;
     font-size: 3.2rem;
     font-weight: 600;
     margin-bottom: 2.4rem;
   }
+  .news__wrap {
+    --col-gap: 2.4rem;
+    --row-gap: 0.6rem;
+  }
   .news__left {
-    margin-left: 3rem;
+    padding: 0 calc(var(--col-gap) / 1.5);
     .news__left__content {
-      .new__left__item {
-        margin-right: 2.4rem;
+      --col-gap: 2.4rem;
+    }
+    .new__left__item {
+      padding: 0 calc(var(--col-gap) / 2);
+      .news__left__item__content {
         .news__time {
           font-size: 1.4rem;
           font-weight: 400;
@@ -29,37 +39,42 @@
           margin-top: 1.5rem;
         }
       }
-      .col-6 {
-        width: calc((6 / 12 * 100%) - 2.4rem);
-      }
+    }
+    .col-6 {
+      width: calc(6 / 12 * 100%);
     }
   }
   .news__right {
-    margin-left: 2.4rem;
-    .news__right__item {
-      padding-bottom: 1.5rem;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid black;
-      .item__time {
-        font-size: 1.4rem;
-        font-weight: 400;
-        margin-bottom: 0.5rem;
-      }
-      .item__infor {
-        display: flex;
-        justify-content: space-between;
-        gap: 7.8rem;
-        .item__infor__title {
-          font-size: 1.6rem;
-          font-weight: 600;
+    flex-shrink: 0;
+
+    padding: 0 calc(var(--col-gap) / 2);
+    .news__right__content {
+      .news__right__item {
+        padding-bottom: 1.5rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid black;
+
+        .item__time {
+          font-size: 1.4rem;
+          font-weight: 400;
+          margin-bottom: 0.5rem;
+        }
+        .item__infor {
+          display: flex;
+          justify-content: space-between;
+          gap: 7.8rem;
+          .item__infor__title {
+            font-size: 1.6rem;
+            font-weight: 600;
+          }
         }
       }
     }
   }
   .col-8 {
-    width: calc((8 / 12 * 100%) - 3rem);
+    width: calc(8 / 12 * 100%);
   }
   .col-4 {
-    width: calc((4 / 12 * 100%) - 2.4rem);
+    width: calc(4 / 12 * 100%);
   }
 }

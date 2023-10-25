@@ -1,5 +1,8 @@
 .exam {
   padding: 5rem 0;
+  .container {
+    max-width: 158rem;
+  }
   .exam__header {
     text-align: center;
     font-size: 3.2rem;
@@ -8,12 +11,21 @@
     margin-bottom: 5rem;
   }
   .exam__details {
-    margin-right: -1.8rem;
+    // margin-right: -1.8rem;
+    --col-gap: 0.8rem;
+    --row-gap: 0.6rem;
     .exam__item {
-      margin-right: 1.8rem;
-      margin-bottom: 01.8rem;
-      display: flex;
-      gap: 2rem;
+      padding: 0 calc(var(--col-gap) / 2);
+      margin-bottom: var(--row-gap);
+      // height: 18rem;
+      .exam__item__content {
+        border-radius: 0.8rem;
+        background-color: #88888833;
+        padding: 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        gap: calc(var(--row-gap));
+      }
       .exam__left {
         .exam__left__img {
           img {
@@ -28,10 +40,8 @@
         }
       }
       .exam__right {
-        // width: 215px;
-        // height: 141px;
         .exam__right__header {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
           display: flex;
           span {
             font-weight: 600;
@@ -42,34 +52,49 @@
           font-weight: 600;
         }
         .exam__infomation {
-          margin-bottom: 2rem;
-          margin-left: 1rem;
+          // margin-left: 1rem;
           .infomation__details {
-            .infomation__item {
-              color: rgba(49, 49, 49, 1);
-              .fa-solid {
-                color: rgba(135, 1, 202, 1);
+            .infomation__details__item {
+              margin-bottom: 1rem;
+              padding: 0 calc(var(--col-gap) / 2);
+              .information__item {
+                color: rgba(49, 49, 49, 1);
+
+                .fa-solid {
+                  color: rgba(135, 1, 202, 1);
+                }
               }
             }
+
+            .cols {
+              width: calc(6 / 12 * 100%);
+            }
+          }
+          .row {
+            --col-gap: 0.8rem;
+            --row-gap: 0.6rem;
           }
         }
         .exam__hastag {
           display: flex;
           justify-content: space-between;
-          align-items: center;
-          gap: 1rem;
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           color: rgba(136, 136, 136, 1);
-          .exam__hastag__title {
-            border-radius: 1.2rem;
-            background-color: rgba(236, 236, 236, 1);
-            padding: 0.6rem 1rem;
+          gap: 1.2rem;
+          margin-top: 1.2rem;
+
+          font-family: $ff-inter;
+
+          .exam__hastag__item {
+            .exam__hastag__title {
+              border-radius: 1.2rem;
+              background-color: rgba(236, 236, 236, 1);
+              padding: 0.6rem 1rem;
+              text-align: center;
+            }
           }
         }
       }
-    }
-    .col-3 {
-      width: calc(25% - 1.8rem);
     }
   }
 }

@@ -1,7 +1,11 @@
 :root {
-    --font-pri: 'Roboto', serif;
-    --size-hd: 10rem;
+  // --font-pri: 'Roboto', serif;
+  --size-hd: 10rem;
+  font-family: "Inter", "Oswald", sans-serif;
 }
+
+$ff-inter: "Inter", sans-serif;
+$ff-oswald: "Oswald", sans-serif;
 
 // dit me m nho chua
 $color-pri: #1a2352;
@@ -9,7 +13,7 @@ $color-second: #ec1d23;
 $color-text: #000000;
 
 @mixin max($value) {
-    @media screen and (max-width: $value) {
-        @content;
-    }
+  @media screen and (max-width: $value) {
+    @content;
+  }
 }
