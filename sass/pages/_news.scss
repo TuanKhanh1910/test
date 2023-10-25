@@ -30,8 +30,11 @@
         .news__title {
           font-size: 1.6rem;
           font-weight: 600;
-          color: rgba(252, 163, 69, 1);
           margin-bottom: 1.5rem;
+          transition: all 0.5s;
+          &:hover {
+            color: rgba(252, 163, 69, 1);
+          }
         }
         .news__desc {
           font-size: 1.6rem;
@@ -63,9 +66,18 @@
           display: flex;
           justify-content: space-between;
           gap: 7.8rem;
+          &:hover {
+            color: rgba(252, 163, 69, 1);
+            .item__infor__icon {
+              .fa-arrow-right {
+                animation: leftToRight 1s linear infinite;
+              }
+            }
+          }
           .item__infor__title {
             font-size: 1.6rem;
             font-weight: 600;
+            transition: all 0.5s;
           }
         }
       }
@@ -76,5 +88,14 @@
   }
   .col-4 {
     width: calc(4 / 12 * 100%);
+  }
+}
+
+@keyframes leftToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }

@@ -499,6 +499,7 @@ img {
   border-bottom: 2px dotted white;
   padding-bottom: 1.1rem;
   position: relative;
+  transition: all 0.5s;
 }
 .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left::before {
   content: "";
@@ -509,8 +510,15 @@ img {
   top: 7%;
   right: -35%;
 }
+.document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left:hover {
+  color: rgb(249, 184, 64);
+}
 .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__right {
   padding-bottom: 1.1rem;
+  transition: all 0.5s;
+}
+.document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__right:hover {
+  color: rgb(249, 184, 64);
 }
 .document .document__details .document__item .document__item__content .document__title {
   text-align: left;
@@ -579,6 +587,31 @@ img {
   display: flex;
   justify-content: space-between;
   gap: calc(var(--row-gap));
+  transition: all 0.5s;
+}
+.exam .exam__details .exam__item .exam__item__content:hover {
+  background-color: rgb(135, 1, 202);
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__left .exam__left__title {
+  color: white;
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__right .exam__right__header {
+  color: white;
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__right .exam__info {
+  color: white;
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__right .exam__infomation .infomation__details__item .information__item {
+  color: white;
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__right .exam__infomation .infomation__details__item .information__item .fa-solid {
+  color: white;
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__right .exam__hastag {
+  color: white;
+}
+.exam .exam__details .exam__item .exam__item__content:hover .exam__right .exam__hastag .exam__hastag__item .exam__hastag__title {
+  background-color: rgb(252, 163, 69);
 }
 .exam .exam__details .exam__item .exam__left .exam__left__img img {
   border-radius: 1rem;
@@ -588,10 +621,12 @@ img {
   font-size: 1.4rem;
   font-weight: 600;
   text-align: center;
+  transition: all 0.5s;
 }
 .exam .exam__details .exam__item .exam__right .exam__right__header {
   font-size: 1.4rem;
   display: flex;
+  transition: all 0.5s;
 }
 .exam .exam__details .exam__item .exam__right .exam__right__header span {
   font-weight: 600;
@@ -599,15 +634,18 @@ img {
 .exam .exam__details .exam__item .exam__right .exam__info {
   font-size: 1.4rem;
   font-weight: 600;
+  transition: all 0.5s;
 }
 .exam .exam__details .exam__item .exam__right .exam__infomation .infomation__details .infomation__details__item {
   margin-bottom: 1rem;
   padding: 0 calc(var(--col-gap) / 2);
 }
 .exam .exam__details .exam__item .exam__right .exam__infomation .infomation__details .infomation__details__item .information__item {
+  transition: all 0.5s;
   color: rgb(49, 49, 49);
 }
 .exam .exam__details .exam__item .exam__right .exam__infomation .infomation__details .infomation__details__item .information__item .fa-solid {
+  transition: all 0.5s;
   color: rgb(135, 1, 202);
 }
 .exam .exam__details .exam__item .exam__right .exam__infomation .infomation__details .cols {
@@ -624,6 +662,7 @@ img {
   color: rgb(136, 136, 136);
   gap: 1.2rem;
   margin-top: 1.2rem;
+  transition: all 0.5s;
   font-family: "Inter", sans-serif;
 }
 .exam .exam__details .exam__item .exam__right .exam__hastag .exam__hastag__item .exam__hastag__title {
@@ -667,8 +706,11 @@ img {
 .news .news__left .new__left__item .news__left__item__content .news__title {
   font-size: 1.6rem;
   font-weight: 600;
-  color: rgb(252, 163, 69);
   margin-bottom: 1.5rem;
+  transition: all 0.5s;
+}
+.news .news__left .new__left__item .news__left__item__content .news__title:hover {
+  color: rgb(252, 163, 69);
 }
 .news .news__left .new__left__item .news__left__item__content .news__desc {
   font-size: 1.6rem;
@@ -697,9 +739,16 @@ img {
   justify-content: space-between;
   gap: 7.8rem;
 }
+.news .news__right .news__right__content .news__right__item .item__infor:hover {
+  color: rgb(252, 163, 69);
+}
+.news .news__right .news__right__content .news__right__item .item__infor:hover .item__infor__icon .fa-arrow-right {
+  animation: leftToRight 1s linear infinite;
+}
 .news .news__right .news__right__content .news__right__item .item__infor .item__infor__title {
   font-size: 1.6rem;
   font-weight: 600;
+  transition: all 0.5s;
 }
 .news .col-8 {
   width: 66.6666666667%;
@@ -708,6 +757,14 @@ img {
   width: 33.3333333333%;
 }
 
+@keyframes leftToRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .document .document__details .col-3 {
     width: 33.3333333333%;
