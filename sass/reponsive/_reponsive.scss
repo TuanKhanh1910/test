@@ -45,11 +45,15 @@
               color: white;
               height: 0;
               .document__img__desc__left {
-                border-bottom: 0;
+                border-bottom: none;
                 &:hover {
+                  color: white;
                   .btn__document__left {
                     background-color: rgb(252, 163, 69);
                   }
+                }
+                &::before {
+                  display: none;
                 }
                 .btn__document__left {
                   padding: 1rem 1.5rem;
@@ -60,6 +64,7 @@
               }
               .document__img__desc__right {
                 &:hover {
+                  color: white;
                   .btn__document__right {
                     background-color: rgb(252, 163, 69);
                   }
@@ -107,8 +112,12 @@
               color: white;
               height: 0;
               .document__img__desc__left {
-                border-bottom: 0;
+                border-bottom: none;
+                &::before {
+                  display: none;
+                }
                 &:hover {
+                  color: white;
                   .btn__document__left {
                     background-color: rgb(252, 163, 69);
                   }
@@ -122,6 +131,7 @@
               }
               .document__img__desc__right {
                 &:hover {
+                  color: white;
                   .btn__document__right {
                     background-color: rgb(252, 163, 69);
                   }

@@ -789,16 +789,25 @@ img {
     padding: 0;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left {
-    border-bottom: 0;
+    border-bottom: none;
+  }
+  .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left:hover {
+    color: white;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left:hover .btn__document__left {
     background-color: rgb(252, 163, 69);
+  }
+  .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left::before {
+    display: none;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left .btn__document__left {
     padding: 1rem 1.5rem;
     background-color: rgb(135, 1, 202);
     border-radius: 1.2rem;
     transition: all 0.5s;
+  }
+  .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__right:hover {
+    color: white;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__right:hover .btn__document__right {
     background-color: rgb(252, 163, 69);
@@ -832,7 +841,13 @@ img {
     padding: 0;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left {
-    border-bottom: 0;
+    border-bottom: none;
+  }
+  .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left::before {
+    display: none;
+  }
+  .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left:hover {
+    color: white;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__left:hover .btn__document__left {
     background-color: rgb(252, 163, 69);
@@ -842,6 +857,9 @@ img {
     background-color: rgb(135, 1, 202);
     border-radius: 1.2rem;
     transition: all 0.5s;
+  }
+  .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__right:hover {
+    color: white;
   }
   .document .document__details .document__item .document__item__content .document__img .document__img__desc .document__img__desc__right:hover .btn__document__right {
     background-color: rgb(252, 163, 69);
